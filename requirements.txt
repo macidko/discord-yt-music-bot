@@ -1,0 +1,6 @@
+   nextcord
+   yt-dlp
+   pynacl
+   ffmpeg
+   asyncio
+   sys
