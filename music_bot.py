@@ -4,6 +4,7 @@ import yt_dlp
 from nextcord import FFmpegPCMAudio, Embed
 import asyncio
 import sys
+import os
 
 intents = nextcord.Intents.default()
 intents.message_content = True
@@ -213,4 +214,4 @@ async def stop(interaction: nextcord.Interaction):
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 if __name__ == "__main__":
-    bot.run("DISCORD_TOKEN") # TOKEN BURAYA YAZILACAK
+    bot.run(os.getenv("DISCORD_TOKEN")) # TOKEN BURAYA YAZILACAK
