@@ -213,4 +213,4 @@ async def stop(interaction: nextcord.Interaction):
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 if __name__ == "__main__":
-    bot.run("") # TOKEN BURAYA YAZILACAK
+    bot.run("DISCORD_TOKEN") # TOKEN BURAYA YAZILACAK
